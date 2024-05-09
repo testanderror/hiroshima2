@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script defer src="./scriptCal.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Disponibilidad</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">広島</a>
+
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined"
+            ><i class="ri-close-large-line"></i
+          ></span>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="./testimonios.html">Testimonios</a></li>
+          <li><a href="./disponibilidad.html">Disponibilidad</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined"
+          ><i class="ri-menu-line"></i
+        ></span>
+      </nav>
+    </header>
+
+    <!-- Calendar -->
+
+    <section class="wrapper">
+      <!-- <p class="h1">Disponibilidad</p> -->
+      <div class="calendar">
+        <div class="month">
+          <button onclick="previousMonth()">
+            <i class="ri-arrow-drop-left-line"></i>
+          </button>
+          <p id="monthYear">May 2024</p>
+          <button onclick="nextMonth()">
+            <i class="ri-arrow-drop-right-fill"></i>
+          </button>
+        </div>
+        <div class="day-labels">
+          <div class="day-label">Sun</div>
+          <div class="day-label">Mon</div>
+          <div class="day-label">Tue</div>
+          <div class="day-label">Wed</div>
+          <div class="day-label">Thu</div>
+          <div class="day-label">Fri</div>
+          <div class="day-label">Sat</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </section>
+  </body>
+</html>
