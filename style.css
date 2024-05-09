@@ -156,10 +156,11 @@ header .navbar{
     padding: 70px 40px 0;
     transition: left 0.15s ease;
     border-bottom-right-radius: 45%;
+    z-index: 3;
   }
 
   .navbar a{
-    color: darkblue;
+    color: cadetblue;
   }
 
   .show-mobile-menu .navbar .menu-links{
@@ -184,3 +185,112 @@ header .navbar{
 
   }
 }
+
+/* reviews */
+
+.review-h1{
+  color: white;
+}
+
+.reviews-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.reviews-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-container{
+  margin-top: 40px;
+  max-width: 300px;
+  width: 100%;
+  padding: 40px 0;
+  
+}
+
+.slide-content{
+  margin: 0 40px;
+}
+
+.card{
+  width: 320px;
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.image-content, .card-content{
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-content{
+  background-color: cadetblue;
+  position: relative;
+  row-gap: 5px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.overlay{
+  border-radius: 25px 25px 0 25px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: cadetblue;
+}
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid cadetblue;
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: cadetblue;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
