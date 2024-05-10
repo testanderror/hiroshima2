@@ -25,6 +25,7 @@ body{
   background: url('./imgs/bg1.jpeg');
   background-position: center;
   background-size: cover;
+  backdrop-filter: blur(2px);
   height: 100vh;
 }
 
@@ -58,7 +59,7 @@ header .navbar{
 
 .navbar .logo{
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   /* font-weight: 600; */
   font-family: 'Nagayama';
   src: url('./nagayama_kai08.otf') format('opentype');
@@ -73,6 +74,18 @@ header .navbar{
   gap: 40px;
   list-style: none;
 }
+
+.lastLink {
+  position: relative;
+  top: -10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.lastLink span:hover {
+  transform: scale(2.2); /* Scale to 120% of the original size */
+}
+
 
 /* header and navbar end */
 
@@ -98,12 +111,15 @@ header .navbar{
 }
 
 .hero-section .content p{
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 15px;
   max-width: 600px;
 }
 
-.hero-section .content button{
+.hero-section .content a{
+  position: relative;
+  bottom: -40px;
+  z-index: -1;
   background: #fff;
   outline: none;
   border: none;
@@ -114,7 +130,29 @@ header .navbar{
   border-radius: 6px;
   cursor: pointer;
   transition: 0.2s ease;
+  text-decoration: none;
+  color: cadetblue;
+  animation: blinker 1.4s ease infinite;
 }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* .hero-section .content button{
+  background: #fff;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 38px;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+} */
 
 /* .hero-section .content button:hover{
   color: #fff;
@@ -198,7 +236,10 @@ header .navbar{
 
   .hero-section .content button{
     padding: 9px 18px;
+  }
 
+  .hero-section .content a{
+    padding: 9px 18px;
   }
 }
 
@@ -400,6 +441,21 @@ header .navbar{
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+/* Reviews End */
+
+/* Servicios Starts */
+.image-container {
+  padding: -20px;
+  border-radius: 6px;
+  width: auto;; /* Full width of viewport */
+  height: 50vh; /* Full height of viewport */
+  background-image: url('./imgs/miyajimaMap.jpeg'); /* Path to your image */
+  background-size: auto; /* Cover the entire div */
+  background-position: top; /* Center the image */
+  touch-action: pan-x pan-y; /* Allow panning with touch gestures */
+}
+/* Servicios Ends */
 
 
 

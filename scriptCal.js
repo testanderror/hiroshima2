@@ -50,7 +50,8 @@ function generateCalendar(monthIndex) {
     dayElement.classList.add('day');
 
     if (unavailableDates.includes(i)) {
-      dayElement.classList.add('unavailable');
+      // dayElement.classList.add('unavailable');
+      dayElement.textContent = '×';
     }
 
     daysContainer.appendChild(dayElement);
